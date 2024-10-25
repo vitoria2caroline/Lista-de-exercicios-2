@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop "while".*/
+        let n = parseInt(prompt("digite um número"))
+        let cont = n
+        let mult=1
+        if(n<0){
+            document.write("número invalido")
+        }else {
+            while(cont> 0){
+                mult *= cont 
+                cont--
+            }
+        }
+        document.write("o fatorial de " +n + " e " +mult)
+    </script>
+</body>
+</html>

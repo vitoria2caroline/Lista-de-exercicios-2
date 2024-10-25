@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*24) Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "do-while" e exiba a média das idades.*/
+        let cont = 1;
+let soma = 0;
+do {
+    let nome = prompt("Digite um nome");
+    let numero = parseInt(prompt("Digite uma idade"));
+    document.write("O nome é " + nome + " e a idade é " + numero + "<br>");
+    soma = soma + numero;
+    cont++;
+} while (cont <= 5);
+
+let media = soma / 5;
+document.write("A média das idades é " + media.toFixed(2));
+    </script>
+</body>
+</html>

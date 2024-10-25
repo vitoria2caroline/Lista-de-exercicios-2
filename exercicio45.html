@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+let cont = 0;
+
+for (;;) {
+    let nome = prompt("Digite um nome:");
+    if (nome.toLowerCase() === "fim") {
+        break;
+    }
+    let idade = parseInt(prompt("Digite uma idade:"));
+    soma += idade;
+    cont++;
+}
+
+let media = soma / cont;
+document.write(`A média é de: ${media.toFixed(2)}`);
+    </script>
+</body>
+</html>

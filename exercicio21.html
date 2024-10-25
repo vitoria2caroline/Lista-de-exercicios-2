@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /*Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "do-while".*/
+     let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+     let divisor = 1;
+    document.write("Divisores do número " + numero + ": ");
+
+do {
+    if (numero % divisor === 0) {
+        document.write(" " + divisor);
+    }
+    divisor++;
+} while (divisor <= numero);
+    </script>
+</body>
+</html>

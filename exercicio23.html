@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*23) Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "do-while".*/
+        let a = 1;
+let b = 1;
+let cont = 1;
+do {
+    document.write(a + ",");
+    let c = a + b;
+    a = b;
+    b = c;
+    cont++;
+} while (cont <= 20);
+    </script>
+</body>
+</html>
